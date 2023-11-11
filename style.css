@@ -237,7 +237,7 @@ label{
 
 .nav{
     height: 100vh;
-    width: 8rem;
+    width: 5.2em;
     background-color: #13121C;
     display: flex;
     flex-direction: column;
@@ -248,7 +248,9 @@ label{
 
 }
 
-.nav a{
+
+
+.nav svg{
     cursor: pointer;
 }
 
@@ -275,7 +277,7 @@ label{
     position: relative;
     font-size: 1.8vw;
     margin-bottom: -5px;
-    margin-top: 2px;
+    margin-top: 30px;
 }
 
 .dashcontainer1{
@@ -301,8 +303,71 @@ label{
     justify-content: center;
     box-shadow: 2px 2px 5px #0202029f;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 20px;
+}
+
+.sbody{
+    background-image: linear-gradient(rrgba(0, 20, 41, 1),rgba(28, 55, 84, 0.86));
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.navbar{
+    display: inline-flex;
+    color: #fff;
+    top: 0;
+    justify-content: space-between;
+    width: 98%;
+    height: 60px;
+    align-items: center;
+}
+
+#titlecard{
+    font-family: 'Marcellus SC', serif;
+    margin-left: 20px;
+}
+
+.navitems{
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0;
+    gap: 20vw;
+    font-size: 20px;
+}
+
+.navitems li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+#getstarted{
+    height: 40px;
+    width: 120px;
+    border-radius: 40px;
+    border-style: none;
+}
+
+.goalratio h1{
+    font-size: 5.4rem;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.goalratio h2{
+    color: #fff;
+    font-family: 'Noto Sans HK', sans-serif;
+    margin: 0;
+    font-size: 1.4rem;
+    text-align: center;
+
+}
+
+.goalratio span{
+    font-size: 3.6rem;
 }
 
 .calgoaltext{
@@ -322,6 +387,7 @@ label{
     overflow: hidden;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     width: 80%;
+    box-shadow: 0px 15px 10px #00000044;
 }
 
 .bar span{
@@ -332,7 +398,7 @@ label{
 }
 
 .css{
-    width: 90%;
+    width: calc(90%);
     animation: css 1s;
 }
 
@@ -380,10 +446,12 @@ circle{
     width: 90%;
     height: 35%;
     margin: 20px;
+    margin-top: 60px;
     border-radius: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 2px 2px 5px #0202029f;
 }
 
 .resultcontainer2{
@@ -391,6 +459,22 @@ circle{
     flex-direction: column;
     gap: 1.5rem;
     width: 100%;
+}
+
+.nutritioncontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    background-color: #1E2129;
+    width: 80%;
+    height: 90%;
+    position: relative;
+    margin: 20px;
+    margin-top: 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .resultcontainer1{
@@ -407,11 +491,13 @@ circle{
     height: 90%;
     position: relative;
     margin: 20px;
+    margin-top: 50px;
     border-radius: 40px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px #0202029f;
 }
 
 #nut{
@@ -434,7 +520,9 @@ circle{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 2px 2px 5px #0202029f;
 }
+
 
 .res{
     display: flex;
@@ -529,6 +617,9 @@ circle{
     padding: 30px;
 }
 
+#vita{
+    display: none;
+}
 
 
 
@@ -588,6 +679,28 @@ circle{
     }
 
     .preference p{
+        text-align: center;
+    }
+
+    .nutrition{
+        margin-top: 20px;
+        margin-bottom: 8rem;
+        width: 90%;
+    }
+
+    .nutrition h3{
+        font-size: 1.4rem;
+    }
+    
+    .resultcontainer1{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #vita{
+        display: flex;
+        color: #fff;
+        margin-bottom: -50px;
         text-align: center;
     }
 
