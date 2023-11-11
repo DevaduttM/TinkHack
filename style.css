@@ -54,7 +54,7 @@ form{
 }
 
 input{
-    width: 90%;
+    width: 100%;
     padding: 0.7rem 2rem;
     background-color: #f3f3f3;
     border: none;
@@ -143,7 +143,7 @@ label{
 
 #callim{
     font-size: 15px;
-    margin-left: 15px;
+
 }
 
 .preference{
@@ -186,19 +186,7 @@ label{
 }
 
 
-#drop-down li{
-    list-style: none;
-    height: 100%;
-    padding: 0.3rem 0.5rem;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-    border-radius: 6px;
-}
 
-#drop-down li:hover{
-    color: #000;
-    background-color: rgba(0, 0, 0, 0.37);
-}
 
 .dropdownbtn:hover{
     background-color: rgba(0, 0, 0, 0.904);
@@ -206,7 +194,8 @@ label{
 
 #allergy{
     font-size: 15px;
-    margin: 20px;
+    margin-top: 15px;
+
 }
 
 .allergies{
@@ -218,16 +207,6 @@ label{
     width: 100%;
 }
 
-.radio{
-    font-size: 20px;
-    font-weight: 400;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.radio input[type="radio"]{
-    display: none;
-}
 
 
 #signupbutton{
@@ -237,7 +216,8 @@ label{
     background-color: rgb(70, 58, 82);
     color: #fff;
     height: 40px;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .ver{
@@ -264,6 +244,7 @@ label{
     align-items: center;
     justify-content: center;
     gap: 5rem;
+    border-radius: 0 40px 40px 0px;
 
 }
 
@@ -301,7 +282,11 @@ label{
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    width: 100%;
+    width: 50%;
+}
+
+.calgoal span{
+    margin-bottom: 20px;
 }
 
 .calgoal{
@@ -314,6 +299,50 @@ label{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 2px 2px 5px #0202029f;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.calgoaltext{
+    display: flex;
+    justify-content: left;
+    width: 80%;
+    color: #fff;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 0.7rem;
+}
+
+.bar{
+    background-color: #18191b;
+    display: block;
+    height: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    width: 80%;
+}
+
+.bar span{
+    height: 15px;
+    float: left;
+    background-image: linear-gradient(135deg, rgb(223, 140, 32)0%, rgb(158, 206, 95)100%);
+    border-radius: 10px;
+}
+
+.css{
+    width: 90%;
+    animation: css 1s;
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
 }
 
 .outer{
@@ -422,9 +451,83 @@ circle{
     left: -15px;
 }
 
+.recipecontainer{
+    height: 90vh;
+    width: 75vw;
+    background-color: #1E2129;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#recipemain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#recipenav{
+    position: fixed;
+    left: 0;
+}
+
+.prompt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75vw;
+    height: 20%;
+    flex-direction: column;
+    padding: 0;
+}
+
+.prompt input{
+    margin-top: 0;
+    width: 40vw;
+}
+
+.prompt form{
+    padding: 0;
+    margin: 5px;
+    display: flex;
+    gap: 1rem;
+}
+
+.prompt h1{
+    color: #fff;
+    margin-top: 45px;
+}
 
 
 
+#submitprompt{
+    height: 2.6rem;
+    width: 6.5rem;
+    border-radius: 30px;
+    border-style: none;
+    background-color: rgb(72, 173, 240);
+    font-weight: 400;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+#submitprompt:hover{
+    background-color: rgb(27, 73, 104);
+    color: #fff;
+}
+
+#submitprompt:active{
+    background-color: rgb(14, 40, 58);
+}
+
+.recipetext{
+    border: 3px solid rgba(255, 255, 255, 0.363);
+    margin-top: 50px;
+    height: 100%;
+    border-radius: 40px;
+    padding: 30px;
+}
 
 
 
@@ -438,7 +541,7 @@ circle{
     .container2{
         display: flex;
         flex-direction: column;
-        width: 400px;
+        width: 90vw;
     }
 
     .drop-down{
@@ -450,8 +553,9 @@ circle{
         display: none;
     }
 
-    .titleRegister{
-        top: 30px;
+    #titleRegister{
+        top: 120px;
+        position: absolute;
     }
 
     .frame{
@@ -472,6 +576,19 @@ circle{
     .nav svg{
         height: 2em;
         width: 2em;
+    }
+
+    .preference{
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    #personalize{
+        text-align: center;
+    }
+
+    .preference p{
+        text-align: center;
     }
 
 }
