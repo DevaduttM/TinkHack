@@ -373,10 +373,71 @@ label{
 .calgoaltext{
     display: flex;
     justify-content: left;
+    flex-direction: column;
     width: 80%;
     color: #fff;
     font-family: 'Noto Sans HK', sans-serif;
     font-size: 0.7rem;
+}
+
+#calories{
+    font-size: 40px;
+}
+
+.uplimg{
+    background-color: #191822;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.innercl{
+    background-color: #1E2129;
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 40px;
+}
+
+.innercl h1{
+    color: #fff;
+}
+
+.imgform{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 20px;
+}
+
+.imgform button{
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border-style: none;
+    background-color: rgb(72, 173, 240);
+    transition: 0.3s ease-in-out;
+}
+.uplimg button:hover{
+    background-color: rgb(27, 73, 104);
+    color: #fff;
+}
+
+#msg{
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
+    font-weight: 600;
 }
 
 .bar{
