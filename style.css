@@ -24,6 +24,7 @@ body{
     color: #3f2c2c;
     font-family: 'Noto Sans HK', sans-serif;
     position: relative;
+    top: 30px;
 }
 
 .container1{
@@ -33,7 +34,7 @@ body{
     flex-direction: column;
     background-color: #ffffff;
     height: 80vh;
-    width: 400px;
+    width: 40rem;
     border-radius: px;
     padding: 20px;
     border-radius: 20px;
@@ -44,7 +45,7 @@ form{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: 90%;
     align-items: center;
 }
 
@@ -54,7 +55,7 @@ form{
 }
 
 input{
-    width: 95%;
+    width: 100%;
     padding: 0.7rem 2rem;
     background-color: #f3f3f3;
     border: none;
@@ -95,7 +96,7 @@ label{
     transform: translateX(-50%);
     width: 0%;
     height: 2px;
-    background: var(--second-bg-color);
+    background: #1a0b1a;
     transition: 0.3s;
 }
 
@@ -105,7 +106,13 @@ label{
     border: none;
     background-color: rgb(70, 58, 82);
     color: #fff;
-    height: 30px;
+    height: 40px;
+    margin: 20px;
+}
+
+
+#sup{
+    color: rgb(43, 43, 126);
 }
 
 
@@ -115,9 +122,13 @@ label{
 
 
 
-@media screen and (max-width: 400px) {
+
+
+
+
+@media screen and (max-width: 700px) {
     .container1{
-        width: 340px;
+        width: 80vw;
         height: 70vh;
     }
 }
